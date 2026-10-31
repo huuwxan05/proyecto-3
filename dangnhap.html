@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng nhập - Điện Lạnh Lâm Nguyên</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <a href="index.html" class="auth-logo">
+                    <i class="fas fa-snowflake"></i>
+                    <span>Điện Lạnh Lâm Nguyên</span>
+                </a>
+                <h1>Đăng nhập</h1>
+                <p>Đăng nhập để quản lý tài khoản</p>
+            </div>
+            <form id="loginFormUser" class="auth-form">
+                <div class="form-group">
+                    <label><i class="fas fa-phone"></i> Số điện thoại</label>
+                    <input type="tel" id="loginPhone" placeholder="Nhập số điện thoại" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> Mật khẩu</label>
+                    <input type="password" id="loginPassUser" placeholder="Nhập mật khẩu" required>
+                </div>
+                <button type="submit" class="auth-btn">
+                    <i class="fas fa-sign-in-alt"></i> Đăng nhập
+                </button>
+            </form>
+            <div class="auth-footer">
+                <p>Chưa có tài khoản? <a href="dangky.html">Đăng ký ngay</a></p>
+                <p><a href="index.html"><i class="fas fa-arrow-left"></i> Về trang chủ</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

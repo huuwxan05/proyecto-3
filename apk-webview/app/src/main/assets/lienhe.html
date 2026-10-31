@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liên hệ - Điện Lạnh Lâm Nguyên</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <i class="fas fa-snowflake"></i>
+                <span>Điện Lạnh Lâm Nguyên</span>
+            </div>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="index.html" class="nav__link">Trang chủ</a></li>
+                <li class="nav__item"><a href="sanpham.html" class="nav__link">Sản phẩm</a></li>
+                <li class="nav__item"><a href="banggia.html" class="nav__link">Bảng giá</a></li>
+                <li class="nav__item"><a href="lienhe.html" class="nav__link">Liên hệ</a></li>
+                <li class="nav__item"><a href="dangnhap.html" class="nav__link"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+                <li class="nav__item"><a href="dangky.html" class="nav__link"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section" style="padding-top: 140px;">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Liên hệ</span>
+                <h2 class="section__title">Liên hệ với chúng tôi</h2>
+                <p class="section__subtitle">Chúng tôi luôn sẵn sàng tư vấn 24/7</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <div class="contact__icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact__details">
+                            <h4>Hotline</h4>
+                            <p>0909 123 456</p>
+                            <p>0987 654 321</p>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact__details">
+                            <h4>Email</h4>
+                            <p>info@dienlanhlamnguyen.vn</p>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact__details">
+                            <h4>Địa chỉ</h4>
+                            <p>123 Đường Nguyễn Văn Linh<br>Quận 7, TP. Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form-wrapper">
+                    <form class="contact__form" id="contactFormPage">
+                        <h3 class="contact__form-title">Gửi yêu cầu</h3>
+                        <div class="form__group">
+                            <input type="text" class="form__input" id="cpName" placeholder="Họ và tên *" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" class="form__input" id="cpPhone" placeholder="Số điện thoại *" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" id="cpEmail" placeholder="Email">
+                        </div>
+                        <div class="form__group">
+                            <textarea class="form__textarea" id="cpMsg" rows="5" placeholder="Nội dung *" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full"><span>Gửi yêu cầu</span><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contactFormPage').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const messages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
+            messages.unshift({
+                id: Date.now(),
+                name: document.getElementById('cpName').value,
+                phone: document.getElementById('cpPhone').value,
+                email: document.getElementById('cpEmail').value,
+                service: 'khac',
+                message: document.getElementById('cpMsg').value,
+                date: new Date().toLocaleString('vi-VN')
+            });
+            localStorage.setItem('contactMessages', JSON.stringify(messages));
+            alert('Gửi thành công! Chúng tôi sẽ liên hệ sớm.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

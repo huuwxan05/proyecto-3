@@ -1,0 +1,7 @@
+com.dienlanhlamnguyen.app-pngs-0 /projects/proyecto-2/apk-webview/app/build/generated/res/pngs/debug
+com.dienlanhlamnguyen.app-resValues-1 /projects/proyecto-2/apk-webview/app/build/generated/res/resValues/debug
+com.dienlanhlamnguyen.app-packageDebugResources-2 /projects/proyecto-2/apk-webview/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.dienlanhlamnguyen.app-packageDebugResources-3 /projects/proyecto-2/apk-webview/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.dienlanhlamnguyen.app-merged_res-4 /projects/proyecto-2/apk-webview/app/build/intermediates/merged_res/debug
+com.dienlanhlamnguyen.app-debug-5 /projects/proyecto-2/apk-webview/app/src/debug/res
+com.dienlanhlamnguyen.app-main-6 /projects/proyecto-2/apk-webview/app/src/main/res

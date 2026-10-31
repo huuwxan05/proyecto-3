@@ -1,0 +1,21 @@
+{
+  "name": "Công ty Điện Lạnh Pro",
+  "short_name": "Điện Lạnh Pro",
+  "description": "Dịch vụ lắp đặt, sửa chữa, bảo trì hệ thống điện lạnh",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0066cc",
+  "icons": [
+    {
+      "src": "imagenes/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "imagenes/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

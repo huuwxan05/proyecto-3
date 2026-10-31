@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bảng giá - Điện Lạnh Lâm Nguyên</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .pricing-hero { padding: 120px 0 60px; background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%); text-align: center; }
+        .pricing-hero h1 { font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 800; margin-bottom: 12px; }
+        .pricing-section { padding: 60px 0; }
+        .pricing-grid { display: grid; gap: 32px; max-width: 900px; margin: 0 auto; }
+        .pricing-card { background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .pricing-header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 24px 32px; display: flex; align-items: center; gap: 12px; }
+        .pricing-header i { font-size: 1.5rem; }
+        .pricing-header h2 { font-size: 1.5rem; margin: 0; }
+        .pricing-table { width: 100%; border-collapse: collapse; }
+        .pricing-table tr { border-bottom: 1px solid #e0e0e0; }
+        .pricing-table tr:last-child { border-bottom: none; }
+        .pricing-table td { padding: 16px 32px; font-size: 0.95rem; }
+        .pricing-table td:first-child { color: var(--text-primary); }
+        .pricing-table td:last-child { text-align: right; font-weight: 600; color: var(--primary); font-size: 1.1rem; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 600; margin-bottom: 20px; }
+        .back-link:hover { gap: 12px; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <i class="fas fa-snowflake"></i>
+                <span>Điện Lạnh Lâm Nguyên</span>
+            </div>
+            <a href="index.html" class="nav__cta"><i class="fas fa-home"></i> Về trang chủ</a>
+        </nav>
+    </header>
+
+    <section class="pricing-hero">
+        <div class="container">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Về trang chủ</a>
+            <h1>Bảng giá dịch vụ</h1>
+            <p>Giá cả minh bạch - Chất lượng đảm bảo</p>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <i class="fas fa-wind"></i>
+                        <h2>Lắp đặt điều hòa</h2>
+                    </div>
+                    <table class="pricing-table">
+                        <tr><td>Điều hòa 1HP</td><td id="p1">1.500.000đ</td></tr>
+                        <tr><td>Điều hòa 1.5HP</td><td id="p15">1.800.000đ</td></tr>
+                        <tr><td>Điều hòa 2HP</td><td id="p2">2.200.000đ</td></tr>
+                        <tr><td>Điều hòa 2.5HP</td><td id="p25">2.800.000đ</td></tr>
+                    </table>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <i class="fas fa-tools"></i>
+                        <h2>Sửa chữa điện lạnh</h2>
+                    </div>
+                    <table class="pricing-table">
+                        <tr><td>Nạp gas điều hòa</td><td id="pGas">350.000đ</td></tr>
+                        <tr><td>Sửa board mạch</td><td id="pBoard">500.000đ</td></tr>
+                        <tr><td>Vệ sinh máy lạnh</td><td id="pClean">250.000đ</td></tr>
+                        <tr><td>Thay linh kiện</td><td id="pPart">Liên hệ</td></tr>
+                    </table>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <i class="fas fa-warehouse"></i>
+                        <h2>Kho lạnh & Dịch vụ khác</h2>
+                    </div>
+                    <table class="pricing-table">
+                        <tr><td>Kho lạnh công nghiệp</td><td id="pCold">2.000.000đ/m²</td></tr>
+                        <tr><td>Bảo trì định kỳ</td><td id="pMaint">1.000.000đ/năm</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">* Giá trên chỉ mang tính tham khảo. Vui lòng liên hệ để có báo giá chính xác</p>
+                <a href="index.html#contact" class="btn btn--primary"><i class="fas fa-phone"></i> Liên hệ báo giá</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('p1').textContent = localStorage.getItem('price1hp') || '1.500.000đ';
+        document.getElementById('p15').textContent = localStorage.getItem('price15hp') || '1.800.000đ';
+        document.getElementById('p2').textContent = localStorage.getItem('price2hp') || '2.200.000đ';
+        document.getElementById('p25').textContent = localStorage.getItem('price25hp') || '2.800.000đ';
+        document.getElementById('pGas').textContent = localStorage.getItem('priceGas') || '350.000đ';
+        document.getElementById('pBoard').textContent = localStorage.getItem('priceBoard') || '500.000đ';
+        document.getElementById('pClean').textContent = localStorage.getItem('priceClean') || '250.000đ';
+        document.getElementById('pPart').textContent = localStorage.getItem('pricePart') || 'Liên hệ';
+        document.getElementById('pCold').textContent = localStorage.getItem('priceCold') || '2.000.000đ/m²';
+        document.getElementById('pMaint').textContent = localStorage.getItem('priceMaintenance') || '1.000.000đ/năm';
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dienlanhlamnguyen.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:3:5-67
+11-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:4:5-79
+12-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:4:22-76
+13
+14    <application
+14-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:6:5-21:19
+15        android:allowBackup="true"
+15-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:7:9-35
+16        android:debuggable="true"
+17        android:extractNativeLibs="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:9:9-43
+19        android:label="Điện Lạnh Lâm Nguyên"
+19-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:8:9-45
+20        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+20-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:11:9-65
+21        android:usesCleartextTraffic="true" >
+21-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:10:9-44
+22        <activity
+22-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:12:9-20:20
+23            android:name="com.dienlanhlamnguyen.app.MainActivity"
+23-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:13:13-41
+24            android:configChanges="orientation|screenSize"
+24-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:15:13-59
+25            android:exported="true" >
+25-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:14:13-36
+26            <intent-filter>
+26-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:16:13-19:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:17:17-69
+27-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:18:17-77
+29-->/projects/proyecto-2/apk-webview/app/src/main/AndroidManifest.xml:18:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>
