@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký - Điện Lạnh Lâm Nguyên</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <a href="index.html" class="auth-logo">
+                    <i class="fas fa-snowflake"></i>
+                    <span>Điện Lạnh Lâm Nguyên</span>
+                </a>
+                <h1>Đăng ký tài khoản</h1>
+                <p>Tạo tài khoản để theo dõi dịch vụ</p>
+            </div>
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> Họ và tên</label>
+                    <input type="text" id="regName" placeholder="Nhập họ và tên" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-phone"></i> Số điện thoại</label>
+                    <input type="tel" id="regPhone" placeholder="Nhập số điện thoại" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="regEmail" placeholder="Nhập email">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> Mật khẩu</label>
+                    <input type="password" id="regPass" placeholder="Nhập mật khẩu" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> Xác nhận mật khẩu</label>
+                    <input type="password" id="regPass2" placeholder="Nhập lại mật khẩu" required>
+                </div>
+                <button type="submit" class="auth-btn">
+                    <i class="fas fa-user-plus"></i> Đăng ký
+                </button>
+            </form>
+            <div class="auth-footer">
+                <p>Đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></p>
+                <p><a href="index.html"><i class="fas fa-arrow-left"></i> Về trang chủ</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

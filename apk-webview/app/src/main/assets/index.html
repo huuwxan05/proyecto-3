@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Điện Lạnh Lâm Nguyên - Dịch vụ lắp đặt, sửa chữa, bảo trì hệ thống điều hòa, tủ lạnh, máy lạnh chất lượng cao">
+    <title>Điện Lạnh Lâm Nguyên - Chuyên nghiệp - Uy tín</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0066cc">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <i class="fas fa-snowflake"></i>
+                <span id="navLogoText">Điện Lạnh Lâm Nguyên</span>
+            </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Trang chủ</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Giới thiệu</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">Dịch vụ</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Dự án</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Liên hệ</a>
+                </li>
+                <li class="nav__item">
+                    <a href="dangnhap.html" class="nav__link"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+                </li>
+                <li class="nav__item">
+                    <a href="dangky.html" class="nav__link"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+                <li class="nav__item"><a href="banggia.html" class="nav__link"><i class="fas fa-tags"></i> Bảng giá</a></li>
+                <li class="nav__item"><a href="sanpham.html" class="nav__link"><i class="fas fa-box"></i> Sản phẩm</a>
+                </li>
+                <li class="nav__item nav__item--cta">
+                    <a href="#contact" class="nav__cta"><i class="fas fa-phone"></i> Gọi ngay</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__particles" id="particles"></div>
+        <div class="hero__content container">
+            <div class="hero__text">
+                <div class="hero__badge">
+                    <i class="fas fa-award"></i>
+                    <span>Uy tín - Chuyên nghiệp - Giá cả hợp lý</span>
+                </div>
+                <h1 class="hero__title" id="heroTitle">
+                    Dịch vụ <span class="hero__title--accent">Điện Lạnh Lâm Nguyên</span><br>
+                    Toàn diện - Chất lượng
+                </h1>
+                <p class="hero__description" id="heroDescription">
+                    Chuyên lắp đặt, sửa chữa, bảo trì hệ thống điều hòa, tủ đông, kho lạnh, máy lạnh dân dụng & công nghiệp. 
+                    Đội ngũ kỹ thuật viên giàu kinh nghiệm, bảo hành dài hạn.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#services" class="btn btn--primary">
+                        <span>Xem dịch vụ</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn--secondary">
+                        <i class="fas fa-phone"></i>
+                        <span id="heroHotline">Hotline: 0909 123 456</span>
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <div class="hero__stat-number" data-count="500" id="stat1">0</div>
+                        <div class="hero__stat-label">Dự án hoàn thành</div>
+                    </div>
+                    <div class="hero__stat">
+                        <div class="hero__stat-number" data-count="10" id="stat2">0</div>
+                        <div class="hero__stat-label">Năm kinh nghiệm</div>
+                    </div>
+                    <div class="hero__stat">
+                        <div class="hero__stat-number" data-count="100" id="stat3">0</div>
+                        <div class="hero__stat-label">% Khách hài lòng</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__image-wrapper">
+                    <div class="hero__ac-unit">
+                        <div class="hero__ac-blades"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#about" class="hero__scroll-link">
+                <span>Cuộn xuống</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Về chúng tôi</span>
+                <h2 class="section__title">Tại sao chọn <span id="aboutCompanyName">Điện Lạnh Lâm Nguyên</span>?</h2>
+                <p class="section__subtitle">Chúng tôi cam kết mang đến dịch vụ điện lạnh chất lượng nhất</p>
+            </div>
+            <div class="about__content">
+                <div class="about__text">
+                    <p class="about__description" id="aboutDesc">
+                        Điện Lạnh Lâm Nguyên với hơn 10 năm kinh nghiệm trong lĩnh vực điện lạnh, tự hào là đơn vị uy tín 
+                        chuyên cung cấp các dịch vụ lắp đặt, sửa chữa, bảo trì hệ thống điện lạnh cho dân dụng và công nghiệp.
+                    </p>
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="about__feature-content">
+                                <h4>Chất lượng đảm bảo</h4>
+                                <p>Linh kiện chính hãng, bảo hành dài hạn</p>
+                            </div>
+                        </div>
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="about__feature-content">
+                                <h4>Phục vụ nhanh chóng</h4>
+                                <p>24/7, có mặt trong 30-60 phút</p>
+                            </div>
+                        </div>
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="about__feature-content">
+                                <h4>Đội ngũ chuyên nghiệp</h4>
+                                <p>Kỹ thuật viên được đào tạo bài bản</p>
+                            </div>
+                        </div>
+                        <div class="about__feature">
+                            <div class="about__feature-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="about__feature-content">
+                                <h4>Giá cả cạnh tranh</h4>
+                                <p>Báo giá minh bạch, không phát sinh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image">
+                    <div class="about__image-card">
+                        <div class="about__image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section section--gray">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Dịch vụ của chúng tôi</span>
+                <h2 class="section__title">Giải pháp điện lạnh toàn diện</h2>
+                <p class="section__subtitle">Đáp ứng mọi nhu cầu về hệ thống làm lạnh của bạn</p>
+            </div>
+            <div class="services__grid">
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="service__title" id="service1Title">Lắp đặt điều hòa</h3>
+                    <p class="service__description" id="service1Desc">
+                        Lắp đặt điều hòa dân dụng, thương mại với quy trình chuẩn, đảm bảo hiệu quả và tiết kiệm điện
+                    </p>
+                    <ul class="service__list">
+                        <li><i class="fas fa-check"></i> Điều hòa treo tường</li>
+                        <li><i class="fas fa-check"></i> Điều hòa âm trần</li>
+                        <li><i class="fas fa-check"></i> Điều hòa trung tâm</li>
+                    </ul>
+                    <a href="#contact" class="service__link">Tư vấn ngay <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service__card service__card--featured">
+                    <div class="service__badge">Phổ biến</div>
+                    <div class="service__icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service__title" id="service2Title">Sửa chữa điện lạnh</h3>
+                    <p class="service__description" id="service2Desc">
+                        Khắc phục mọi sự cố điều hòa, tủ lạnh, máy giặt với thời gian nhanh chóng và chi phí tối ưu
+                    </p>
+                    <ul class="service__list">
+                        <li><i class="fas fa-check"></i> Nạp gas điều hòa</li>
+                        <li><i class="fas fa-check"></i> Sửa board mạch</li>
+                        <li><i class="fas fa-check"></i> Vệ sinh máy lạnh</li>
+                    </ul>
+                    <a href="#contact" class="service__link">Tư vấn ngay <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="service__title" id="service3Title">Kho lạnh công nghiệp</h3>
+                    <p class="service__description" id="service3Desc">
+                        Thiết kế, lắp đặt hệ thống kho lạnh, cold room, phòng bảo quản thực phẩm theo tiêu chuẩn
+                    </p>
+                    <ul class="service__list">
+                        <li><i class="fas fa-check"></i> Kho lạnh nhỏ đến lớn</li>
+                        <li><i class="fas fa-check"></i> Hệ thống làm lạnh chuyên dụng</li>
+                        <li><i class="fas fa-check"></i> Bảo trì định kỳ</li>
+                    </ul>
+                    <a href="#contact" class="service__link">Tư vấn ngay <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Dự án tiêu biểu</span>
+                <h2 class="section__title">Khách hàng tin tưởng</h2>
+                <p class="section__subtitle">Một số dự án chúng tôi đã thực hiện thành công</p>
+            </div>
+            <div class="projects__grid">
+                <div class="project__card">
+                    <div class="project__image">
+                        <div class="project__overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <span class="project__category">Công nghiệp</span>
+                        <h3 class="project__title">Kho lạnh thực phẩm</h3>
+                        <p class="project__description">Lắp đặt kho lạnh 100m2 cho siêu thị</p>
+                    </div>
+                </div>
+                <div class="project__card">
+                    <div class="project__image project__image--2">
+                        <div class="project__overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <span class="project__category">Dân dụng</span>
+                        <h3 class="project__title">Tòa nhà văn phòng</h3>
+                        <p class="project__description">Hệ thống điều hòa trung tâm 20 tầng</p>
+                    </div>
+                </div>
+                <div class="project__card">
+                    <div class="project__image project__image--3">
+                        <div class="project__overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="project__content">
+                        <span class="project__category">Thương mại</span>
+                        <h3 class="project__title">Nhà hàng khách sạn</h3>
+                        <p class="project__description">Giải pháp điện lạnh toàn diện</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section section--gray">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Liên hệ</span>
+                <h2 class="section__title">Liên hệ với chúng tôi</h2>
+                <p class="section__subtitle">Chúng tôi luôn sẵn sàng tư vấn và hỗ trợ 24/7</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Hotline</h4>
+                            <p id="contactHotline1">0909 123 456</p>
+                            <p id="contactHotline2">0987 654 321</p>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Email</h4>
+                            <p id="contactEmail">info@dienlanhlamnguyen.vn</p>
+                            <p>contact@dienlanhlamnguyen.vn</p>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Địa chỉ</h4>
+                            <p id="contactAddress">123 Đường Nguyễn Văn Linh<br>Quận 7, TP. Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Giờ làm việc</h4>
+                            <p>Thứ 2 - Chủ nhật: 24/7</p>
+                            <p>Luôn sẵn sàng phục vụ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form-wrapper">
+                    <form class="contact__form" id="contactForm">
+                        <h3 class="contact__form-title">Gửi yêu cầu tư vấn</h3>
+                        <div class="form__group">
+                            <input type="text" class="form__input" id="contactName" placeholder="Họ và tên *" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" class="form__input" id="contactPhone" placeholder="Số điện thoại *" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" id="contactFormEmail" placeholder="Email">
+                        </div>
+                        <div class="form__group">
+                            <select class="form__input" id="contactService" required>
+                                <option value="" disabled selected>Chọn dịch vụ *</option>
+                                <option value="lap-dat">Lắp đặt điều hòa</option>
+                                <option value="sua-chua">Sửa chữa điện lạnh</option>
+                                <option value="kho-lanh">Kho lạnh công nghiệp</option>
+                                <option value="bao-tri">Bảo trì định kỳ</option>
+                                <option value="khac">Khác</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <textarea class="form__textarea" id="contactMessage" rows="5" placeholder="Nội dung yêu cầu *" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <span>Gửi yêu cầu</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <i class="fas fa-snowflake"></i>
+                        <span id="footerLogoText">Điện Lạnh Lâm Nguyên</span>
+                    </div>
+                    <p class="footer__description">
+                        Chuyên cung cấp dịch vụ điện lạnh uy tín, chất lượng hàng đầu Việt Nam
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Zalo">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Dịch vụ</h4>
+                    <ul class="footer__links">
+                        <li><a href="#services">Lắp đặt điều hòa</a></li>
+                        <li><a href="#services">Sửa chữa điện lạnh</a></li>
+                        <li><a href="#services">Kho lạnh công nghiệp</a></li>
+                        <li><a href="#services">Bảo trì định kỳ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Liên kết</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Giới thiệu</a></li>
+                        <li><a href="#projects">Dự án</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Liên hệ</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span id="footerPhone">0909 123 456</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span id="footerEmail">info@dienlanhlamnguyen.vn</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="footerAddress">123 Đường Nguyễn Văn Linh, TP.HCM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 <span id="footerCompanyName">Điện Lạnh Lâm Nguyên</span>. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Về đầu trang">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Admin Trigger Button -->
+        <i class="fas fa-user-shield"></i>
+    </button>
+
+    <!-- Admin Login Modal -->
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="adminLoginClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal__header">
+                <div class="modal__icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h2 class="modal__title">Đăng nhập Admin</h2>
+                <p class="modal__subtitle">Quản lý toàn bộ website</p>
+            </div>
+            <form id="adminLoginForm" class="modal__form">
+                <div class="form__group">
+                    <label class="form__label">Tên đăng nhập</label>
+                    <input type="text" class="form__input" id="adminUsername" placeholder="Nhập tên đăng nhập" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Mật khẩu</label>
+                    <input type="password" class="form__input" id="adminPassword" placeholder="Nhập mật khẩu" required>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">
+                    <span>Đăng nhập</span>
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+            </form>
+            <p class="modal__hint">Mặc định: admin / admin123</p>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+        <div class="admin-panel__header">
+            <div class="admin-panel__logo">
+                <i class="fas fa-cogs"></i>
+                <span>QUẢN TRỊ WEBSITE - ĐIỆN LẠNH LÂM NGUYÊN</span>
+            </div>
+            <div class="admin-panel__actions">
+                <button class="admin-btn admin-btn--success" id="adminSaveAll">
+                    <i class="fas fa-save"></i>
+                    <span>Lưu tất cả</span>
+                </button>
+                <button class="admin-btn admin-btn--secondary" id="adminPreview">
+                    <i class="fas fa-eye"></i>
+                    <span>Xem trước</span>
+                </button>
+                <button class="admin-btn admin-btn--danger" id="adminLogout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Đăng xuất</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="admin-panel__content">
+            <div class="admin-sidebar">
+                <nav class="admin-nav">
+                    <button class="admin-nav__item active" data-tab="general">
+                        <i class="fas fa-home"></i>
+                        <span>Thông tin chung</span>
+                    </button>
+                    <button class="admin-nav__item" data-tab="hero">
+                        <i class="fas fa-star"></i>
+                        <span>Trang chủ</span>
+                    </button>
+                    <button class="admin-nav__item" data-tab="about">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Giới thiệu</span>
+                    </button>
+                    <button class="admin-nav__item" data-tab="services">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span>Dịch vụ</span>
+                    </button>
+                    <button class="admin-nav__item" data-tab="projects">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Dự án</span>
+                    </button>
+                    <button class="admin-nav__item" data-tab="contact">
+                        <i class="fas fa-phone"></i>
+                        <span>Liên hệ</span>
+                    </button>
+                    <button class="admin-nav__item" data-tab="messages">
+                        <i class="fas fa-envelope"></i>
+                        <span>Tin nhắn</span>
+                    </button>
+                </nav>
+            </div>
+            
+            <div class="admin-main">
+                <!-- General Tab -->
+                <div class="admin-tab active" id="tab-general">
+                    <div class="admin-tab__header">
+                        <h2><i class="fas fa-home"></i> Thông tin chung</h2>
+                        <p>Quản lý thông tin cơ bản của công ty</p>
+                    </div>
+                    <div class="admin-form">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Tên công ty</label>
+                                <input type="text" class="form__input" id="adminCompanyName" value="Điện Lạnh Lâm Nguyên">
+                            </div>
+                        </div>
+                        <div class="form__row form__row--2">
+                            <div class="form__group">
+                                <label class="form__label">Hotline 1</label>
+                                <input type="text" class="form__input" id="adminHotline1" value="0909 123 456">
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label">Hotline 2</label>
+                                <input type="text" class="form__input" id="adminHotline2" value="0987 654 321">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Email</label>
+                                <input type="email" class="form__input" id="adminEmail" value="info@dienlanhlamnguyen.vn">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Địa chỉ</label>
+                                <input type="text" class="form__input" id="adminAddress" value="123 Đường Nguyễn Văn Linh, Quận 7, TP. Hồ Chí Minh">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Tab -->
+                <div class="admin-tab" id="tab-hero">
+                    <div class="admin-tab__header">
+                        <h2><i class="fas fa-star"></i> Trang chủ</h2>
+                        <p>Chỉnh sửa nội dung phần hero</p>
+                    </div>
+                    <div class="admin-form">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Tiêu đề chính</label>
+                                <input type="text" class="form__input" id="adminHeroTitle" value="Dịch vụ Điện Lạnh Lâm Nguyên Toàn diện - Chất lượng">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Mô tả</label>
+                                <textarea class="form__textarea" id="adminHeroDesc" rows="4">Chuyên lắp đặt, sửa chữa, bảo trì hệ thống điều hòa, tủ đông, kho lạnh, máy lạnh dân dụng & công nghiệp. Đội ngũ kỹ thuật viên giàu kinh nghiệm, bảo hành dài hạn.</textarea>
+                            </div>
+                        </div>
+                        <div class="form__row form__row--3">
+                            <div class="form__group">
+                                <label class="form__label">Số dự án hoàn thành</label>
+                                <input type="number" class="form__input" id="adminStat1" value="500">
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label">Năm kinh nghiệm</label>
+                                <input type="number" class="form__input" id="adminStat2" value="10">
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label">% Khách hài lòng</label>
+                                <input type="number" class="form__input" id="adminStat3" value="100">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Hotline hiển thị</label>
+                                <input type="text" class="form__input" id="adminHeroHotline" value="Hotline: 0909 123 456">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Tab -->
+                <div class="admin-tab" id="tab-about">
+                    <div class="admin-tab__header">
+                        <h2><i class="fas fa-info-circle"></i> Giới thiệu</h2>
+                        <p>Chỉnh sửa phần giới thiệu</p>
+                    </div>
+                    <div class="admin-form">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Mô tả về công ty</label>
+                                <textarea class="form__textarea" id="adminAboutDesc" rows="5">Điện Lạnh Lâm Nguyên với hơn 10 năm kinh nghiệm trong lĩnh vực điện lạnh, tự hào là đơn vị uy tín chuyên cung cấp các dịch vụ lắp đặt, sửa chữa, bảo trì hệ thống điện lạnh cho dân dụng và công nghiệp.</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Services Tab -->
+                <div class="admin-tab" id="tab-services">
+                    <div class="admin-tab__header">
+                        <h2><i class="fas fa-concierge-bell"></i> Dịch vụ</h2>
+                        <p>Chỉnh sửa các dịch vụ</p>
+                    </div>
+                    <div class="admin-form">
+                        <div class="service-editor">
+                            <h3><i class="fas fa-wind"></i> Dịch vụ 1</h3>
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label class="form__label">Tên dịch vụ</label>
+                                    <input type="text" class="form__input" id="adminService1Title" value="Lắp đặt điều hòa">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label class="form__label">Mô tả</label>
+                                    <textarea class="form__textarea" id="adminService1Desc" rows="3">Lắp đặt điều hòa dân dụng, thương mại với quy trình chuẩn, đảm bảo hiệu quả và tiết kiệm điện</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-editor service-editor--featured">
+                            <h3><i class="fas fa-tools"></i> Dịch vụ 2 (Nổi bật)</h3>
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label class="form__label">Tên dịch vụ</label>
+                                    <input type="text" class="form__input" id="adminService2Title" value="Sửa chữa điện lạnh">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label class="form__label">Mô tả</label>
+                                    <textarea class="form__textarea" id="adminService2Desc" rows="3">Khắc phục mọi sự cố điều hòa, tủ lạnh, máy giặt với thời gian nhanh chóng và chi phí tối ưu</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-editor">
+                            <h3><i class="fas fa-warehouse"></i> Dịch vụ 3</h3>
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label class="form__label">Tên dịch vụ</label>
+                                    <input type="text" class="form__input" id="adminService3Title" value="Kho lạnh công nghiệp">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label class="form__label">Mô tả</label>
+                                    <textarea class="form__textarea" id="adminService3Desc" rows="3">Thiết kế, lắp đặt hệ thống kho lạnh, cold room, phòng bảo quản thực phẩm theo tiêu chuẩn</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Messages Tab -->
+                <div class="admin-tab" id="tab-messages">
+                    <div class="admin-tab__header">
+                        <h2><i class="fas fa-envelope"></i> Tin nhắn khách hàng</h2>
+                        <p>Xem các yêu cầu tư vấn từ khách hàng</p>
+                    </div>
+                    <div class="messages-list" id="messagesList">
+                        <div class="message-empty">
+                            <i class="fas fa-inbox"></i>
+                            <p>Chưa có tin nhắn nào</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/app-dynamic.js"></script>
+</body>
+</html>
+
+<!-- Live Chat Widget -->
+<div class="chat-widget">
+    <button class="chat-toggle" id="chatToggle" aria-label="Chat trực tuyến">
+        <i class="fas fa-comments"></i>
+        <span class="chat-badge" id="chatBadge">1</span>
+    </button>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div>
+                    <div class="chat-title">Trợ lý Điện Lạnh Lâm Nguyên</div>
+                    <div class="chat-status">
+                        <span class="chat-status-dot"></span>
+                        <span>Bot tự động</span>
+                    </div>
+                </div>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message chat-message-bot">
+                <div class="chat-message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chat-message-content">
+                    <div class="chat-message-bubble">
+                        Xin chào! Tôi là trợ lý tự động của Điện Lạnh Lâm Nguyên. Tôi có thể giúp gì cho bạn?
+                    </div>
+                    <div class="chat-message-time">Vừa xong</div>
+                </div>
+            </div>
+            <div class="chat-quick-replies">
+                <button class="quick-reply" data-reply="Báo giá dịch vụ">Báo giá dịch vụ</button>
+                <button class="quick-reply" data-reply="Lắp đặt điều hòa">Lắp đặt điều hòa</button>
+                <button class="quick-reply" data-reply="Sửa chữa khẩn cấp">Sửa chữa khẩn cấp</button>
+                <button class="quick-reply" data-reply="Liên hệ">Liên hệ</button>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Nhập tin nhắn..." autocomplete="off">
+            <button class="chat-send" id="chatSend">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
